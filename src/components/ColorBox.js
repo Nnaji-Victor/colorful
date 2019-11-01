@@ -3,9 +3,16 @@ import './ColorBox.css';
 import './Palette.css';
 
 const ColorBox = (props) => {
+    const {name, bg} = props;
     return (
-        <div style={{background: props.bg}} className="ColorBox">
-            <span>MORE</span>
+        <div style={{background: bg}} className="ColorBox">
+            <div className="copy-container">
+                <div className="box-container">
+                    <span>{name}</span>
+                </div>
+                <button className="copy-button">Copy</button>
+            </div>
+            <span className="see-more">more</span>
         </div>
     )
 }
