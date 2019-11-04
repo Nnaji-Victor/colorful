@@ -1,0 +1,18 @@
+.Navbar{
+    display: flex;
+    align-items: center;
+    height: 6vh;
+}
+
+.logo{
+    margin-right: 15px;
+    padding: 0 13px;
+    font-family: 'Sedgwick Ave Display', cursive;
+    text-decoration: none;
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    letter-spacing: .3rem;
+    background-image: linear-gradient(to left, #2ac46a, #863da5, blue, #2e4357, #e8bc0d, #9352ae, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
