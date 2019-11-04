@@ -10,17 +10,23 @@ const Palette = (props) => {
     const changeColor = (value) => setFormat(value);
 
     const colorboxes = props.palette.colors[level].map(color => (
-        <ColorBox bg={color[format]} name={color.name} />
+        <ColorBox bg={color[format]} name={color.name} key={color.id}/>
     ))
     return (
-        <>
-        <Navbar level={level} changeLevel={changeLevel} handleChange={changeColor}/>
-        <div className="Palette">
-            <div className="Palette-colors">
-                {colorboxes}
+        <div className="palette-holder">
+            <Navbar level={level} changeLevel={changeLevel} handleChange={changeColor}/>
+            <div className="Palette">
+                <div className="Palette-colors">
+                    {colorboxes}
+                </div>
+                <footer className="palette-footer">
+                    {props.palette.paletteName}
+                    <span className="emoji">
+                        {props.palette.emoji}
+                    </span>
+                </footer>
             </div>
         </div>
-        </>
     )
 }
 

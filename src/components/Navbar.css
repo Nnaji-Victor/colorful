@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     height: 6vh;
+    width: 100%;
 }
 
 .logo{
@@ -15,4 +16,8 @@
     background-image: linear-gradient(to left, #2ac46a, #863da5, blue, #2e4357, #e8bc0d, #9352ae, red);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+.select-container{
+    margin-left: auto;
+    padding-right: 2rem;
 }

@@ -1,11 +1,28 @@
 .Palette{
+    height: 98%;
+}
+
+.palette-holder{
     height: 100vh;
+    overflow: hidden;
+    padding: 0 1px;
 }
 
 .Palette-colors{
     height: 90%;
 }
 
+.palette-footer{
+    height: 5vh;
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    align-items: center;
+}
+
+.emoji{
+    margin: 0 1rem;
+}
 .slider{
     width: 340px;
     margin: 0 10px;
